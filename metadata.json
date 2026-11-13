@@ -1,0 +1,6 @@
+{
+  "name": "CHAI WALA",
+  "description": "TEA • TRADITION • GOOD MOOD — Authentic Taste… Now in the UK! Premium UK desi chai tea store.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

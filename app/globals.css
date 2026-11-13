@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-chai-green: #063B20;
+  --color-chai-green-dark: #032C1B;
+  --color-chai-cream: #FFF8E9;
+  --color-chai-cream-muted: #F5EBD6;
+  --color-chai-gold: #D9AD55;
+  --color-chai-gold-hover: #C2963E;
+  --color-chai-red: #C62828;
+  --color-chai-brown: #382015;
+  --color-chai-brown-muted: #6B4D3E;
+
+  --font-serif: var(--font-playfair), Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: var(--font-mono-code), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FFF8E9;
+    color: #382015;
+    font-family: var(--font-jakarta), sans-serif;
+  }
+
+  body {
+    background-color: #FFF8E9;
+    color: #382015;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
